@@ -79,8 +79,8 @@ function App() {
           movies.map((movie) => <Movie key={movie.id} {...movie} />) : <h1>No Movies Found</h1>}
       </div>
       <div className="pages">
-        <a>Back</a>
-        <a>Next</a>
+        <span>Back</span>
+        <span>Next</span>
       </div>
       <footer className="copyright">
         <span>&copy; 2021 MovieHK</span>

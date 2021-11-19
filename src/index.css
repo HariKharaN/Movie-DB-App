@@ -189,7 +189,7 @@ body {
   justify-content: flex-end;
   margin-right: 45px;
 }
-.pages a{
+.pages span{
   background-color: #22254b;
   padding: 0.1rem 0.5rem;
   font-weight: 100;
@@ -198,9 +198,7 @@ body {
   margin-bottom: 50px;
   cursor: pointer;
 }
-.pages span:nth-child(4){
-  margin-right: 0;
-}
+
 
 @media(max-width: 500px){
   .nav-brand{
