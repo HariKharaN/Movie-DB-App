@@ -14,9 +14,8 @@ const FEATURED_API =
 function App() {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(async () => {
+  useEffect(() => {
     getMovies(FEATURED_API);
   }, []);
 
@@ -52,7 +51,7 @@ function App() {
           </a>
         </span>
         <header>
-          <form onSubmit={(setIsLoading, handleSubmit)}>
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
               className="search"
