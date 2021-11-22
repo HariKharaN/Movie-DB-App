@@ -39,6 +39,14 @@ function App() {
   const handleChange = (e) => {
     setSearchTerm(e.target.value);
   };
+
+  const handleMore = () => {
+    setMovies([]);
+  };
+  const handleHome = () => {
+    getMovies(FEATURED_API);
+  }
+
   return (
     <div>
       <div className="Navbar">
@@ -74,12 +82,17 @@ function App() {
         <div className="results-show">Results for {searchTerm} . . .</div>
       )}
       <div className="movie-container">
-        {movies.length > 0 ?
-          movies.map((movie) => <Movie key={movie.id} {...movie} />) : <h1>No Movies Found</h1>}
+        {movies.length > 0 ? (
+          movies.map((movie) => (
+            <Movie key={movie.id} {...movie} handleMore={handleMore} />
+          ))
+        ) : (
+          <h1>No Movies Found</h1>
+        )}
       </div>
       <div className="pages">
-        <span>Back</span>
-        <span>Next</span>
+        <button onClick={handleHome}>Back</button>
+        <button onClick={handleHome}>Next</button>
       </div>
       <footer className="copyright">
         <span>&copy; 2021 MovieHK</span>

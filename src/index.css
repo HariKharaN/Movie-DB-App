@@ -8,7 +8,7 @@ body {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Viga&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -37,20 +37,21 @@ body {
 }
 
 .Navbar a{
-  color: white;
+  color: black;
   font-family: "poppins", sans-serif;
   text-decoration: none;
-  letter-spacing: 1px;
-  font-weight: bolder;
-  font-size: 1.2rem;
+  font-size: 20px;
   position: relative;
-  top: 3px;
-  
+  top: 2px;
+  background-color:rgb(243, 174, 46);
+  padding: 3px 5px;
+  border-radius: 8px;
   /* margin-right: 1150px; */
-  font-weight: bold;
+  font-weight: bolder;
   cursor:pointer;
   
 }
+
 
 .search {
   font-family: inherit;
@@ -189,13 +190,18 @@ body {
   justify-content: flex-end;
   margin-right: 45px;
 }
-.pages span{
-  background-color: #22254b;
-  padding: 0.1rem 0.5rem;
-  font-weight: 100;
+.pages button{
+  border: none;
+  outline: none;
+  height: 100%;
+  padding: 5px 10px;
+  margin: 15px 5px;
+  background-color: #0A0D1D;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
   border-radius: 5px;
-  margin-right: 10px;
-  margin-bottom: 50px;
+  font-family: "poppins",sans-serif;
   cursor: pointer;
 }
 
