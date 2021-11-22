@@ -51,10 +51,12 @@ function App() {
     <div>
       <div className="Navbar">
         <span className="nav-brand">
-          <IconButton>
+          <span className="movie-icon">
+          <IconButton >
             <MovieRoundedIcon style={{ color: "white" }}></MovieRoundedIcon>
           </IconButton>
-          <a className="logo" href="/">
+          </span>
+          <a className="logo" onClick={handleHome}>
             MovieDB
           </a>
         </span>
