@@ -36,7 +36,7 @@ body {
   /* cursor: pointer; */
 }
 
-.Navbar a {
+.logo {
   color: black;
   font-family: "poppins", sans-serif;
   text-decoration: none;
@@ -204,7 +204,7 @@ body {
     width: 150px;
     height: 100%;
   }
-  .Navbar a {
+  .logo{
     font-size: 10px;
     position: relative;
     top: 15px;
@@ -227,7 +227,7 @@ body {
     color: white;
     outline: none;
   }
-  .Navbar a {
+  .logo {
     position: relative;
     top: 10px;
     font-size: 10px;
@@ -237,7 +237,7 @@ body {
   }
 }
 
-.Navbar a {
+.logo {
   color: black;
   font-family: "poppins", sans-serif;
   text-decoration: none;

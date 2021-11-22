@@ -56,9 +56,9 @@ function App() {
             <MovieRoundedIcon style={{ color: "white" }}></MovieRoundedIcon>
           </IconButton>
           </span>
-          <a className="logo" onClick={handleHome}>
+          <span className="logo" onClick={handleHome}>
             MovieDB
-          </a>
+          </span>
         </span>
         <header>
           <form onSubmit={handleSubmit}>

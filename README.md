@@ -1,6 +1,8 @@
 # Movie DB app 
 
-Built using React and material UI and 
+Link: https://harikharan.github.io/Movie-DB-App/ 
+
+Built using React and material UI 
 
 Functions: Search a Movie and displaying the overview and ratings.
 
