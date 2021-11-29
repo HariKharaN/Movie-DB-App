@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.container {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.carousel {
+   
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.featured-today {
+  font-family: "Oswald", sans-serif;
+  color: rgb(243, 174, 46);
+  font-size: 2rem;
+}
+.category{
+    font-family: "Oswald" , sans-serif;  
+    /* background-color: white; */
+    /* color:black; */
+    color:white;
+    overflow: hidden;
+    padding: 0.5rem;    
+}
+.category-title{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.cat-1, .cat-2{
+    display: flex;
+}
+.category h5{
+    cursor: pointer;
+    color: black;       
+}
+.cat-1 h5{
+    background-color: rgb(243, 174, 46);
+    border-radius: 15px;
+    padding: 3px 12px;
+}
+.cat-1 h5:nth-child(2){
+    margin-left: 5px;
+}
+.cat-2 h5{
+    background-color: rgb(243, 174, 46);
+    border-radius: 15px;
+    padding: 3px 12px;
+}
+.cat-2 h5:nth-child(2){
+    margin-left: 5px;
+}
+.cat-2 h5:nth-child(3){
+    margin-left: 5px;
+}
+.category h5{
+    transition: all 0.5s ease-in-out;
+}
+.category h5:hover{
+    box-shadow: 4px 1px 5px rgb(128, 101, 101), 4px 5px 5px  rgb(10,13,29,1);
+    position: relative;
+    top: -8px;
+    
+}
+
+@media (max-width: 1400px) {
+    .category h5{
+        font-size: 1rem;
+    }
+    
+  }
+@media (max-width: 1400px) {
+    .category h5{
+        font-size: 0.7rem;
+    }
+    .category{
+        padding: 0.1rem;
+    }
+    
+  }
+@media (max-width: 1000px) {
+    
+    .main-category{
+        display: none;
+    }
+    
+  }
+@media (max-width: 520PX) {
+    
+    .main-carou{
+        display: none;
+    }
+    .degline ,.new-rel-text{
+        margin-top: 20px;
+    }
+    
+  }

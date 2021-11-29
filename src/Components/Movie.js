@@ -11,7 +11,7 @@ const seVoteClass = (vote) => {
   }
 };
 
-function Movie({ title, poster_path, overview, vote_average,key, handleMore }) {
+function Movie({ title, original_name, poster_path, overview, vote_average,key, handleMore }) {
 
   
 
@@ -26,7 +26,9 @@ function Movie({ title, poster_path, overview, vote_average,key, handleMore }) {
         alt={title}
       />
       <div className="movie-info">
-        <h5>{title}</h5>
+        {
+          title===null ?  <h5>{original_name}</h5> : <h5>{title}</h5>
+        }
         <span className={`tag ${seVoteClass(vote_average)}`}>
           {vote_average}
         </span>
