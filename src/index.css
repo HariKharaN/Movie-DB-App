@@ -6,10 +6,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Viga&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -206,29 +206,29 @@ body {
   text-decoration: none;
 }
 
-.dash{
-  width:50px;
+.dash {
+  width: 50px;
   height: 5px;
   background-color: white;
   transform: rotateX(90deg);
 }
-.new-rel-text{
+.new-rel-text {
   display: flex;
   /* margin-top: 15px; */
   margin-bottom: -10px;
   margin-left: 0.4rem;
   border-left: white;
-  font-family:  "Oswald",sans-serif;
+  font-family: "Oswald", sans-serif;
   color: rgb(243, 174, 46);
   font-size: 2rem;
   letter-spacing: 1px;
 }
-.res{
+.res {
   margin-left: 2.7rem;
   color: white;
   font-size: 1.5rem;
 }
-.degline{
+.degline {
   margin-left: 2.7rem;
   width: 8px;
   height: 50px;
@@ -237,54 +237,75 @@ body {
   background: rgb(243, 174, 46);
 }
 
-.actions{
+.actions {
   position: relative;
   top: 2px;
 }
 
-.actions a{
+.actions a {
   top: 5px;
   color: rgb(219, 203, 203);
   text-decoration: none;
 }
 
-.nav-links{
+.nav-links {
   transition: all 0.3s ease-in-out;
 }
 
-.nav-links:hover{
+.nav-links:hover {
   background-color: rgb(243, 174, 46);
   padding: 0.1rem 0.2rem;
   border-radius: 4px;
   color: #040309;
   font-size: 1rem;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
-.actions{
+.actions {
   cursor: pointer;
 }
 
-.box-head{
+.box-head {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-.search-icon:hover{
+.search-icon:hover {
   background-color: #040309;
- padding: 5px 1px;
- border-radius: 10px;
- margin-left: 5px;
-
+  padding: 5px 1px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+.stream-head {
+  display: flex;
+  width: 100%;
+}
+.stream-platform {
+  font-size: 1rem;
+  padding: 5px 20px;
+  /* border: 2px solid; */
+  border-bottom: 0.25rem solid transparent;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.stream-head span:nth-child(1) {
+  margin-right: 12px;
+  border-bottom: 0.25rem solid rgb(243, 174, 46);
 }
 
+.stream-platform:hover {
+  border-bottom-color: rgb(243, 174, 46);
+}
+
+/* MEDIA QUERY */
 
 @media (max-width: 520px) {
   .search {
     width: 150px;
     height: 100%;
   }
-  .logo{
+  .logo {
     font-size: 10px;
     position: relative;
     top: 15px;
@@ -315,11 +336,11 @@ body {
   .movie-icon {
     display: none;
   }
-  .Navbar{
+  .Navbar {
     display: flex;
     justify-content: space-evenly;
   }
-  header{
+  header {
     margin-top: 5px;
   }
 }
@@ -344,18 +365,22 @@ body {
     justify-content: center;
     margin-right: 0;
   }
-  
 }
 @media (max-width: 780px) {
-  .actions{
+  .actions {
     display: none;
   }
-  
 }
 @media (max-width: 420px) {
-  .logo{
+  .logo {
     top: 8px;
   }
+  .whatToWatch{
+    display: none;
+  }
 }
-
-
+@media (max-width: 1205px) {
+  .stream-head{
+    display: none;
+  }
+}
